@@ -37,7 +37,7 @@ int main()
     TODO: https://stackoverflow.com/questions/9562218/c-multiple-scanfs-when-i-enter-in-a-value-for-one-scanf-it-skips-the-second-s
     !scanf("%c") reads the newline character from the ENTER key.
 
-    When you type let's say 15, you type a 1, a 5 and then press the ENTER key.
+    When you type let's say 15, you type a 1, a 5 and then press the ENTER ("\n") key.
     So there are now three characters in the input buffer.
     ? scanf("%d")
     reads the 1 and the 5, interpreting them as the number 15, but the newline character is still in the input buffer.
