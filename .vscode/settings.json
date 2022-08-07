@@ -3,5 +3,10 @@
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true
+    },
+    "files.associations": {
+        "*.c": "c",
+        "stdio.h": "c",
+        "stdbool.h": "c"
     }
 }
