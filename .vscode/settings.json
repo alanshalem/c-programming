@@ -7,6 +7,7 @@
     "files.associations": {
         "*.c": "c",
         "stdio.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "10_basic_operators.C": "cpp"
     }
 }
