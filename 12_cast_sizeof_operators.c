@@ -2,6 +2,68 @@
 
 int main()
 {
+    // Cast and sizeof operators
+
+    int x = 0;
+    float floatToCast = 12.125;
+    x = floatToCast;
+    printf("x = %d\n", x); // x = 12
+    int castedVariables = (int)21.51 + (int)26.99;
+    // 21 + 26 = 47
+    printf("castedVariables = %d\n", castedVariables); // castedVariables = 51
+
+    // sizeof operator returns the size of a variable in bytes
+    float f = 1.0;
+    int i = 1;
+    double d = 1.0;
+    char c = 'a';
+
+    printf("****************************************************\n");
+    printf("VARIABLES\n");
+    printf("****************************************************\n");
+    printf("sizeof(f): %d\n", sizeof(f)); // 4 bytes
+    printf("sizeof(i): %d\n", sizeof(i)); // 4 bytes
+    printf("sizeof(d): %d\n", sizeof(d)); // 8 bytes
+    printf("sizeof(c): %d\n", sizeof(c)); // 1 byte
+    printf("****************************************************\n");
+    printf("DATA TYPES\n");
+    printf("****************************************************\n");
+    printf("sizeof(char): %d\n", sizeof(char));           // 1 byte
+    printf("sizeof(int): %d\n", sizeof(int));             // 4 bytes
+    printf("sizeof(float): %d\n", sizeof(float));         // 4 bytes
+    printf("sizeof(double): %d\n", sizeof(double));       // 8 bytes
+    printf("sizeof(long): %d\n", sizeof(long));           // 8 bytes
+    printf("sizeof(long long): %d\n", sizeof(long long)); // 8 bytes
+    printf("sizeof(short): %d\n", sizeof(short));         // 2 bytes
+    printf("sizeof(unsigned): %d\n", sizeof(unsigned));   // 4 bytes
+    printf("sizeof(signed): %d\n", sizeof(signed));       // 4 bytes
+    printf("sizeof(void): %d\n", sizeof(void));           // 1 byte
+    printf("****************************************************\n");
+    printf("POINTERS\n");
+    printf("****************************************************\n");
+    printf("sizeof(char *): %d\n", sizeof(char *));           // Pointer = 8 bytes
+    printf("sizeof(int *): %d\n", sizeof(int *));             // Pointer = 8 bytes
+    printf("sizeof(float *): %d\n", sizeof(float *));         // Pointer = 8 bytes
+    printf("sizeof(double *): %d\n", sizeof(double *));       // Pointer = 8 bytes
+    printf("sizeof(long *): %d\n", sizeof(long *));           // Pointer = 8 bytes
+    printf("sizeof(long long *): %d\n", sizeof(long long *)); // Pointer = 8 bytes
+    printf("sizeof(short *): %d\n", sizeof(short *));         // Pointer = 8 bytes
+    printf("sizeof(unsigned *): %d\n", sizeof(unsigned *));   // Pointer = 8 bytes
+    printf("sizeof(signed *): %d\n", sizeof(signed *));       // Pointer = 8 bytes
+    printf("sizeof(void *): %d\n", sizeof(void *));           // Pointer = 8 bytes
+    printf("****************************************************\n");
+    printf("ARRAYS\n");
+    printf("****************************************************\n");
+    printf("sizeof(char[10]): %d\n", sizeof(char[10]));           // 1byte * 10 = 10bytes
+    printf("sizeof(int[10]): %d\n", sizeof(int[10]));             // 4bytes * 10 = 40bytes
+    printf("sizeof(float[10]): %d\n", sizeof(float[10]));         // 4bytes * 10 = 40bytes
+    printf("sizeof(double[10]): %d\n", sizeof(double[10]));       // 8bytes * 10 = 80bytes
+    printf("sizeof(long[10]): %d\n", sizeof(long[10]));           // 8bytes * 10 = 80bytes
+    printf("sizeof(long long[10]): %d\n", sizeof(long long[10])); // 8bytes * 10 = 80bytes
+    printf("sizeof(short[10]): %d\n", sizeof(short[10]));         // 2bytes * 10 = 20bytes
+    printf("sizeof(unsigned[10]): %d\n", sizeof(unsigned[10]));   // 4bytes * 10 = 40bytes
+    printf("sizeof(signed[10]): %d\n", sizeof(signed[10]));       // 4bytes * 10 = 40bytes
+    // ! printf("sizeof(void[10]): %d\n", sizeof(void[10])); // Compile error, array of void is not allowed
 
     return 0;
 }
