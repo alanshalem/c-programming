@@ -5,6 +5,7 @@ int main()
 {
     int minutes = 0;
     double days = 0.0, years = 0.0, minutesInYear = 0.0, minutesInDay = 0.0;
+    // If we don't initialize the double variables as .0, the program will not work properly.
 
     printf("Enter the number of minutes: ");
     scanf("%d", &minutes);
@@ -14,7 +15,9 @@ int main()
     minutesInYear = (60 * 24 * 365);
 
     days = (minutes / minutesInDay);
+    // double = (int/double)
     years = (minutes / minutesInYear);
+    // double = (int/double)
     printf("%d minutes is approximately %f days and %f years.\n", minutes, days, years);
 
     return 0;
